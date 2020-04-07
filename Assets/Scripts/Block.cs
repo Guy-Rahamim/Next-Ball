@@ -7,9 +7,12 @@ public class Block : MonoBehaviour
 {
 	[SerializeField] AudioClip brokenBlock;
 	LevelManager levelManager;
+	GameStatus gameStatus;
+	
 
 	public void Start()
 	{
+		gameStatus = FindObjectOfType<GameStatus>();
 		levelManager= FindObjectOfType<LevelManager>();
 		levelManager.countBreakableBlocks();
 	}
@@ -21,6 +24,7 @@ public class Block : MonoBehaviour
 
 	private void destroyBlock()
 	{
+		gameStatus.addScore();
 		levelManager.blockBroken();
 		AudioSource.PlayClipAtPoint(brokenBlock, Camera.main.transform.position);
 		Destroy(gameObject);
