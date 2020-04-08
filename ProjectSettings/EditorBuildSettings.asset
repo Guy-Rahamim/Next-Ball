@@ -9,12 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/menu.unity
     guid: 0982e2ffee96d3f4c896e1d67251e257
   - enabled: 1
+    path: Assets/Scenes/How To Play.unity
+    guid: b7a455e1b8a58dd4eb0d2b51dd6abe20
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 70df4f4416220064390d5fd6adcfe647
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 81f8c40b948886149a6e49d50b1867b8
   - enabled: 1
+    path: Assets/Scenes/Win Screen.unity
+    guid: 1b10d44fa94d9f247971e02ac3225752
+  - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: 39f360eb9546d0a4bbe00ef5955f0041
+  - enabled: 1
+    path: Assets/Scenes/Pong.unity
+    guid: d1cab716e9c7c234fb67fd6adf730d73
   m_configObjects: {}
