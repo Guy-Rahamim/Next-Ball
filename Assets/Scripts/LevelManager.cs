@@ -20,6 +20,9 @@ public class LevelManager : MonoBehaviour
 	{
 		remainingBlocks--;
 		if (remainingBlocks == 0)
+		{
+			FindObjectOfType<GameStatus>().resetGameSpeed();
 			sceneLoader.loadNextLevel();
+		}
 	}
 }

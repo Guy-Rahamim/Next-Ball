@@ -6,24 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/menu.unity
+    path: Assets/Scenes/Menus/menu.unity
     guid: 0982e2ffee96d3f4c896e1d67251e257
   - enabled: 1
-    path: Assets/Scenes/How To Play.unity
+    path: Assets/Scenes/Menus/How To Play.unity
     guid: b7a455e1b8a58dd4eb0d2b51dd6abe20
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/Levels/Level 1.unity
     guid: 70df4f4416220064390d5fd6adcfe647
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/Levels/Level 2.unity
+    guid: cf5efb0f11973c9478346aabbc309608
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 3.unity
     guid: 81f8c40b948886149a6e49d50b1867b8
   - enabled: 1
-    path: Assets/Scenes/Win Screen.unity
+    path: Assets/Scenes/Menus/Win Screen.unity
     guid: 1b10d44fa94d9f247971e02ac3225752
   - enabled: 1
-    path: Assets/Scenes/Game Over.unity
+    path: Assets/Scenes/Menus/Game Over.unity
     guid: 39f360eb9546d0a4bbe00ef5955f0041
   - enabled: 1
-    path: Assets/Scenes/Pong.unity
+    path: Assets/Scenes/Menus/Pong Menu.unity
+    guid: 473a80e1f05ee274f9633f160219f1af
+  - enabled: 1
+    path: Assets/Scenes/Levels/Pong.unity
     guid: d1cab716e9c7c234fb67fd6adf730d73
+  - enabled: 1
+    path: Assets/Scenes/Menus/Pong Win Screen.unity
+    guid: a7ae82eef34b8c348b9efa16054a40a4
   m_configObjects: {}

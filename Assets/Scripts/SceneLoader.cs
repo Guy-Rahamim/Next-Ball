@@ -19,6 +19,11 @@ public class SceneLoader : MonoBehaviour
 
 		SceneManager.LoadScene("Level 1");
 	}
+	 
+	public void onMainMenuButtonClick()
+	{
+		SceneManager.LoadScene("menu");
+	}
 
 	public void onTryAgainClick()
 	{
@@ -46,7 +51,15 @@ public class SceneLoader : MonoBehaviour
 		SceneManager.LoadScene("How To Play");
 	}
 
+	public void loadPongWinScreen()
+	{
+		SceneManager.LoadScene("Pong Win Screen");
+	}
 
+	public void loadPongMenu()
+	{
+		SceneManager.LoadScene("Pong Menu");
+	}
 
 
 }

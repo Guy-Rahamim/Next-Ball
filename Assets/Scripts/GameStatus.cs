@@ -5,10 +5,11 @@ using TMPro;
 public class GameStatus : MonoBehaviour
 {
 
-
+	[SerializeField] int life = 5;
 	[Range(0.1f,25f)] [SerializeField] float gameSpeed= 1f;
 	[SerializeField] bool AutoPlay = false;
 	[SerializeField] TextMeshProUGUI scoreText;
+	[SerializeField] TextMeshProUGUI lifeText;
 	[SerializeField] int pointsPerBlock = 17;
 	[SerializeField] int totalScore = 0;
 
@@ -20,7 +21,9 @@ public class GameStatus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+		updateLife();
+		updateScore();
+		gameSpeed = 1f;
 	}
 
 	private void Awake()
@@ -42,7 +45,7 @@ public class GameStatus : MonoBehaviour
     {
 		controlSpeed();
 		Time.timeScale = Mathf.Clamp(gameSpeed,0.2f,10);
-		updateScore();
+		
 
 	}
 
@@ -60,11 +63,12 @@ public class GameStatus : MonoBehaviour
 	public void addScore()
 	{
 		totalScore += pointsPerBlock;
+		updateScore();
 	}
 
 	public void updateScore()
 	{
-		scoreText.text = totalScore.ToString();
+		scoreText.text ="Score: " + totalScore.ToString();
 	}
 
 	public void resetGame()
@@ -72,5 +76,24 @@ public class GameStatus : MonoBehaviour
 		Destroy(gameObject);
 	}
 
+	public void resetGameSpeed()
+	{
+		gameSpeed = 1f;
+	}
 
+	public int getLife()
+	{
+		return life;
+	}
+
+	public void setLife(int life)
+	{
+		this.life = life;
+		updateLife();
+	}
+
+	public void updateLife()
+	{
+		lifeText.text = "Life remaining: " + getLife() ;
+	}
 }
