@@ -8,11 +8,10 @@ public class Ball : MonoBehaviour
 	//Configurable Parameters.
 	[SerializeField] public Paddle paddle;
 	[SerializeField] Vector2 initialForce;
-	[SerializeField] float minimumYThresholde=2;
 	Vector2 ballToPaddleVector;
 	Vector2 paddleLocation;
 	[SerializeField] AudioClip[] ballSounds;
-	[SerializeField] float movementTweak = 0.2f;
+	[SerializeField] float movementTweak = 1f;
 	Vector2 velocityTweak;
 
 	//chached references.

@@ -17,7 +17,7 @@ public class SceneLoader : MonoBehaviour
 	public void onStartClick()
 	{
 
-		SceneManager.LoadScene("Level 1");
+		SceneManager.LoadScene("Level 3");
 	}
 	 
 	public void onMainMenuButtonClick()
@@ -61,5 +61,8 @@ public class SceneLoader : MonoBehaviour
 		SceneManager.LoadScene("Pong Menu");
 	}
 
-
+	public void loadCredits()
+	{
+		SceneManager.LoadScene("Credits");
+	}
 }

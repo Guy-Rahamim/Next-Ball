@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class GameStatus : MonoBehaviour
 {
 
@@ -45,7 +46,8 @@ public class GameStatus : MonoBehaviour
     {
 		controlSpeed();
 		Time.timeScale = Mathf.Clamp(gameSpeed,0.2f,10);
-		
+		if (SceneManager.GetActiveScene().name.Contains("menu") || SceneManager.GetActiveScene().name.Contains("Menu"))
+			Destroy(gameObject);
 
 	}
 

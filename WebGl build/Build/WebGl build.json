@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Next Ball",
+"productVersion": "0.1",
+"dataUrl": "WebGl build.data.unityweb",
+"wasmCodeUrl": "WebGl build.wasm.code.unityweb",
+"wasmFrameworkUrl": "WebGl build.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.7f1"
+}

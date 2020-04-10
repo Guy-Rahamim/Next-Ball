@@ -18,19 +18,21 @@ public class LoseCollider : MonoBehaviour
 	}
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (gameStatus.getLife() > 1)
+		 if (SceneManager.GetActiveScene().name == "Pong")
+			SceneManager.LoadScene("Pong Menu");
+		else if (gameStatus.getLife() > 1)
 		{
 			//SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 			reloadBall();
 		}
-		else if (SceneManager.GetActiveScene().name == "Pong")
-			SceneManager.LoadScene("Pong Menu");
+
 		else
 		SceneManager.LoadScene("Game Over");
 	}
 
 	private void reloadBall()
 	{
+		
 		Destroy(ball);
 		prefabBall = Instantiate(prefabBall);
 		prefabBall.paddle = paddle;

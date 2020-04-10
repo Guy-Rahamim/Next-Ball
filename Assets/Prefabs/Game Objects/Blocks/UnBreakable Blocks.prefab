@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5009279030938113811}
   - component: {fileID: 5009279030938113810}
   - component: {fileID: 7423321650318052135}
-  - component: {fileID: 5785986950148728678}
+  - component: {fileID: 8188796093866243142}
   m_Layer: 0
   m_Name: UnBreakable Blocks
   m_TagString: UnBreakable
@@ -97,8 +97,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockSparklesVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
   brokenBlock: {fileID: 8300000, guid: 5ff0827e22755884f84f3207d877a531, type: 3}
---- !u!61 &5785986950148728678
-BoxCollider2D:
+  blockSprites: []
+--- !u!60 &8188796093866243142
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -110,7 +111,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5, y: 0.5}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -120,6 +121,11 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.4911078, y: 1.075877}
+      - {x: 0, y: 1}
+      - {x: 0, y: 0}
+      - {x: 0.5048082, y: -0.053979993}
+      - {x: 1, y: 0}
+      - {x: 1, y: 1}

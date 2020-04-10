@@ -8,6 +8,7 @@ public class CheatCodeManager : MonoBehaviour
 {
 	[SerializeField] Button pongButton;
 	[SerializeField] AudioClip cheatSound;
+	[SerializeField] Paddle paddle;
 	AudioSource audioSource;
 	
 	//CHEAT CODES!
@@ -38,7 +39,7 @@ public class CheatCodeManager : MonoBehaviour
 			{
 				audioSource.PlayOneShot(cheatSound);
 				autoPlayActivated = true;
-				FindObjectOfType<Paddle>().setAutoPlay(true);
+				paddle.setAutoPlay(true);
 			}
 
 		}
